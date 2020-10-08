@@ -1,3 +1,13 @@
+## 参考资料
+[Redux A Predictable State Container for JS Apps](https://redux.js.org/)
+
+[Redux 包教包会（一）：解救 React 状态危机](https://tuture.co/2019/11/28/1fe175a/)
+
+[Redux 包教包会（二）：趁热打铁，完全重构](https://tuture.co/2019/11/28/d129c56/)
+
+[Redux 包教包会（三）：各司其职，重拾初心](https://tuture.co/2019/11/28/a3b94eb/)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
