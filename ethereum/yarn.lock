@@ -1985,6 +1985,15 @@
     "@web3-react/types" "^6.0.7"
     tiny-warning "^1.0.3"
 
+"@web3-react/network-connector@^6.1.3":
+  version "6.1.3"
+  resolved "https://registry.yarnpkg.com/@web3-react/network-connector/-/network-connector-6.1.3.tgz#bb24c29f047c6946b7d8fa6b1f162365e4eb95df"
+  integrity sha512-u8npOL7QjdFMRTmXRT6KsqB9m3a9sVLnnaEwpmYhBUwcqgihgrO7kMTw82m0+nYq/ScTuUCFIPM29GpDLRjMwA==
+  dependencies:
+    "@web3-react/abstract-connector" "^6.0.7"
+    "@web3-react/types" "^6.0.7"
+    tiny-invariant "^1.0.6"
+
 "@web3-react/types@^6.0.7":
   version "6.0.7"
   resolved "https://registry.yarnpkg.com/@web3-react/types/-/types-6.0.7.tgz#34a6204224467eedc6123abaf55fbb6baeb2809f"
@@ -10202,6 +10211,11 @@ svgo@^1.0.0, svgo@^1.2.2:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
+swr-eth@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/swr-eth/-/swr-eth-0.1.2.tgz#73d161152208e2e016b11c9c704a620e2f8686ad"
+  integrity sha512-o/4qo0bydPb/uYCiyXyE8nuSqICMDG+mqgyM0+OWCHss7Q1MlSXTy906bwQy+yGRA76z7eCOlmP8A71qZw/0YQ==
 
 swr@^0.3.5:
   version "0.3.5"

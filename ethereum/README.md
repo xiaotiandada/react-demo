@@ -2,6 +2,10 @@
 
 [How to Fetch and Update Data From Ethereum with React and SWR](https://consensys.net/blog/blockchain-development/how-to-fetch-and-update-data-from-ethereum-with-react-and-swr/)
 
+[swr-eth-tutorial](https://github.com/aboutlo/swr-eth-tutorial)
+
+[web3-react](https://github.com/NoahZinsmeister/web3-react)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

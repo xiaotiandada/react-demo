@@ -1,14 +1,14 @@
 import React from 'react'
-import { TOKENS_BY_NETWOR } from "./utils/index"
+import { TOKENS_BY_NETWORK } from "./utils/index"
 import { TokenBalance } from "./TokenBalance";
 
 export const TokenList = ({ chainId }) => {
     return (
         <>
-            { TOKENS_BY_NETWOR[chainId].map(token => (
-                <div>
+            { TOKENS_BY_NETWORK[chainId].map(token => (
+                <div key={ token.address } >
                     { token.name }:
-                    <TokenBalance key={ token.address } {...token}></TokenBalance>
+                    <TokenBalance {...token}></TokenBalance>
                 </div>
             )) }
         </>

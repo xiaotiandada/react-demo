@@ -19,7 +19,7 @@ export interface IERC20 {
     abi: any
 }
 
-export const TOKENS_BY_NETWOR: {
+export const TOKENS_BY_NETWORK: {
     [key: number]: IERC20[]
 } = {
     [Networks.MainNet]: [

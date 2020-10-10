@@ -2,13 +2,10 @@ import React, { useEffect, Fragment } from 'react'
 import { useWeb3React } from '@web3-react/core'
 import useSWR from 'swr'
 import { formatEther, formatUnits } from "@ethersproject/units";
-import { fetcher } from "./utils/index";
 
 export const EthBalance = () => {
     const { account, library } = useWeb3React()
-    const { data: balance, mutate } = useSWR(['getBalance', account, 'latest'], {
-        fetcher: fetcher(library),
-    })
+    const { data: balance, mutate } = useSWR(['getBalance', account, 'latest'])
 
     useEffect(() => {
         // listen for changes on an Ethereum address

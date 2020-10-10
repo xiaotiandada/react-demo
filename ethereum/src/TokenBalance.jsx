@@ -9,9 +9,7 @@ import { formatUnits } from "@ethersproject/units";
 export const TokenBalance = ({ symbol, address, decimals }) => {
     const { account, library } = useWeb3React()
     console.log('symbol, address, decimals', symbol, address, decimals)
-    const { data: balance, mutate } = useSWR([address, 'balanceOf', account], {
-        fetcher: fetcher(library, ERC20ABI),
-    })
+    const { data: balance, mutate } = useSWR([address, 'balanceOf', account])
     console.log('TokenBalance balance', balance)
 
     useEffect(() => {
