@@ -1,4 +1,7 @@
 ## Counter
+
+> React Redux Redux-toolkit
+
 [Redux](https://redux.js.org/)
 
 [redux-toolkit](https://redux-toolkit.js.org/)
