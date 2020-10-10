@@ -1,8 +1,8 @@
 ## [todolist](./todolist)
-react redux
 
+> React Redux
 
 ## [counter](./counter)
 
-react redux redux-toolkit
+> React Redux Redux-toolkit
 
