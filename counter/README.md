@@ -1,3 +1,12 @@
+## Counter
+[Redux](https://redux.js.org/)
+
+[redux-toolkit](https://redux-toolkit.js.org/)
+
+[React Hooks](https://reactjs.org/docs/hooks-intro.html)
+
+[cra-template-redux-typescript](https://github.com/reduxjs/cra-template-redux-typescript)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
