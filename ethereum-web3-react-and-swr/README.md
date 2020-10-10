@@ -1,4 +1,4 @@
-## Ethereum
+## ethereum-web3-react-and-swr
 
 [How to Fetch and Update Data From Ethereum with React and SWR](https://consensys.net/blog/blockchain-development/how-to-fetch-and-update-data-from-ethereum-with-react-and-swr/)
 
