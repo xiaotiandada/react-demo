@@ -1,4 +1,7 @@
 ## 参考资料
+
+> React Redux
+
 [Redux A Predictable State Container for JS Apps](https://redux.js.org/)
 
 [Redux 包教包会（一）：解救 React 状态危机](https://tuture.co/2019/11/28/1fe175a/)
