@@ -2,7 +2,7 @@ import React from 'react'
 import { TOKENS_BY_NETWORK } from "./utils/index"
 import { TokenBalance } from "./TokenBalance";
 
-export const TokenList = ({ chainId }) => {
+export const TokenList = ({ chainId }: { chainId: number }) => {
     return (
         <>
             { TOKENS_BY_NETWORK[chainId].map(token => (

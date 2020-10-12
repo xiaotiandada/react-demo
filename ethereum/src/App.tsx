@@ -16,6 +16,7 @@ import { useEagerConnect } from "./hooks/useEagerConnect";
 import { useInactiveListener } from "./hooks/useInactiveListener";
 import ethers from "ethers";
 import { useProvider } from "./hooks/useProvider"
+import { Counter } from "./Counter";
 
 export const injected = new InjectedConnector({
   supportedChainIds: [
@@ -38,17 +39,18 @@ function App() {
   }
 
   // handle logic to recognize the connector currently being activated
-  const [activatingConnector, setActivatingConnector] = React.useState()
-  React.useEffect(() => {
-    console.log('Wallet running')
-    if (activatingConnector && activatingConnector === connector) {
-      setActivatingConnector(undefined)
-    }
-  }, [activatingConnector, connector])
+  // const [activatingConnector, setActivatingConnector] = React.useState()
+  // console.log('activatingConnector', activatingConnector)
+  // React.useEffect(() => {
+  //   console.log('Wallet running')
+  //   if (activatingConnector && activatingConnector === connector) {
+  //     setActivatingConnector(undefined)
+  //   }
+  // }, [activatingConnector, connector])
 
   // mount only once or face issues :P
   const triedEager = useEagerConnect()
-  useInactiveListener(!triedEager || !!activatingConnector)
+  useInactiveListener(!triedEager)
 
   return (
     <div className="App">
@@ -62,6 +64,8 @@ function App() {
           { active && (
             <Fragment>
               <EthBalance></EthBalance>
+              <TokenList chainId={ chainId }></TokenList>
+              <Counter></Counter>
             </Fragment>
           ) }
         </ul>

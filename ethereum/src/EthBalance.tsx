@@ -1,7 +1,6 @@
 import React, { useEffect, useCallback, useState } from 'react'
 import { useWeb3React } from '@web3-react/core'
 import { formatEther } from "ethers/lib/utils";
-import ethers from "ethers";
 
 export const EthBalance = () => {
     const { account, library } = useWeb3React()
@@ -12,7 +11,7 @@ export const EthBalance = () => {
         // listen for changes on an Ethereum address
         const getBalance = async () => {
             // let provider = new ethers.providers.Web3Provider(window.ethereum)
-            let balance = await window.provider.getBalance(account)
+            let balance = await (window as any).provider.getBalance(account)
             setBalance(parseFloat(formatEther(balance)).toPrecision(4))
         }
         getBalance()
