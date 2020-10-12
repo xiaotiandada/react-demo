@@ -15,6 +15,7 @@ import { TOKENS_BY_NETWORK } from "./utils/index";
 import { useEagerConnect } from "./hooks/useEagerConnect";
 import { useInactiveListener } from "./hooks/useInactiveListener";
 import ethers from "ethers";
+import { useProvider } from "./hooks/useProvider"
 
 export const injected = new InjectedConnector({
   supportedChainIds: [
@@ -27,6 +28,8 @@ export const injected = new InjectedConnector({
 })
 
 function App() {
+  useProvider()
+
   const { chainId, account, activate, active, library, connector }: any = useWeb3React<Web3Provider>()
 
   const onClick = async () => {
