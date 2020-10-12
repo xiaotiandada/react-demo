@@ -6,6 +6,10 @@
 
 [web3-react](https://github.com/NoahZinsmeister/web3-react)
 
+**Counter contract**
+
+https://rinkeby.etherscan.io/address/0x90b7eae6c6c189e1466c35ee8dc9930be2dcddf1
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
