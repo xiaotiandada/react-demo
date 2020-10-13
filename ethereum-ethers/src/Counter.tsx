@@ -11,7 +11,8 @@ export const Counter = () => {
     const [counter, setCounter] = useState(0)
 
     const getCounter = async () => {
-        const provider = new ethers.providers.JsonRpcProvider('https://eth-rinkeby.alchemyapi.io/v2/SLFdIfubZlDvaKjRv-rP3Ie0msesJydB');
+        let provider = ethers.getDefaultProvider('rinkeby');
+        // const provider = new ethers.providers.JsonRpcProvider('https://eth-rinkeby.alchemyapi.io/v2/SLFdIfubZlDvaKjRv-rP3Ie0msesJydB');
         const COUNTERABI: any = COUNTER
         const contract = new ethers.Contract('0x90b7eae6c6c189e1466c35ee8dc9930be2dcddf1', COUNTERABI, provider)
         let response = await contract.get()
@@ -22,7 +23,8 @@ export const Counter = () => {
     const increment = async () => {
         console.log('COUNTERABI', COUNTER)
         const COUNTERABI: any = COUNTER
-        const provider = new ethers.providers.JsonRpcProvider('https://eth-rinkeby.alchemyapi.io/v2/SLFdIfubZlDvaKjRv-rP3Ie0msesJydB')
+        let provider = ethers.getDefaultProvider('rinkeby');
+        // const provider = new ethers.providers.JsonRpcProvider('https://eth-rinkeby.alchemyapi.io/v2/SLFdIfubZlDvaKjRv-rP3Ie0msesJydB')
         const contract = new ethers.Contract('0x90b7eae6c6c189e1466c35ee8dc9930be2dcddf1', COUNTERABI, provider)
         const signer = (window as any).provider.getSigner()
         const contractWithSigner = contract.connect(signer)

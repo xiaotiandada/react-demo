@@ -20,7 +20,8 @@ export const TokenBalance = ({ symbol, address, decimals }: TokenBalanceInterfac
         console.log(`listening for Transfer...`)
 
         const balanceOf = async () => {
-            const provider = new ethers.providers.JsonRpcProvider('https://eth-rinkeby.alchemyapi.io/v2/SLFdIfubZlDvaKjRv-rP3Ie0msesJydB');
+            // const provider = new ethers.providers.JsonRpcProvider('https://eth-rinkeby.alchemyapi.io/v2/SLFdIfubZlDvaKjRv-rP3Ie0msesJydB');
+            let provider = ethers.getDefaultProvider('rinkeby');
             const contract = new ethers.Contract(address, ERC20ABI, provider)
             let response = await contract.balanceOf(account)
             console.log('balanceOf', response)
